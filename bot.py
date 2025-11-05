@@ -218,5 +218,6 @@ async def on_ready():
 # ==============================
 #   RUN BOT
 # ==============================
-bot.run("")
+token = os.environ.get("DISCORD_TOKEN")
+bot.run(token)
 
